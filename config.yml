@@ -40,6 +40,8 @@ dockitems_persist:
     path: "/System/Applications/Utilities/Activity Monitor.app/"
   - name: "VIP Access"
     path: "/Applications/VIP Access.app/"
+  - name: "Microsoft Outlook"
+    path: "/Applications/Microsoft Outlook.app"
 
 configure_sudoers: true
 sudoers_custom_config: |

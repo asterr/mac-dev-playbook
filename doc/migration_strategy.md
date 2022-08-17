@@ -155,3 +155,59 @@ _Reference: https://imaginesoftware.atlassian.net/wiki/spaces/INFRATS/pages/2401
     * Credential ID (from token)
     * Security code (from token)
     * Submit
+
+---
+
+## MS Office
+
+_Note: MS Office is installed by ansible._
+
+  * Open Microsoft Outlook
+  * Add work e-mail address
+  * Enter password
+  * Authorize request with Microsoft Authenticator
+    on another device.
+  * Accept Privacy Agreement
+  * Personalization:
+    * Density: Compact
+    * Reading Pane: Read on the right
+
+---
+
+## MS Office Updater
+
+  * Open Microsoft AutoUpdate
+  * Open "Advanced"
+  * Set Update Channel to Beta
+
+---
+
+## MS Teams
+
+_Note: MS Teams seems to be installed with MS Office._
+
+  * Open Microsoft Teams
+  * Add work e-mail address
+  * Enter password
+  * Authorize request with Microsoft Authenticator
+    on another device.
+
+---
+
+## MS OneNote
+
+_Note: MS OneNote is installed with MS Office._
+
+_Note: This assumes that the work account is already
+signed in from the Outlook setup step._
+
+
+  * Open Microsoft OneNote
+  * Go to File -> Open Notebook
+  * Add a Place
+    * Click: OneDrive
+    * Add personal e-mail
+    * Select "Personal Account"
+    * Send notification to Authenticator
+  * Historical Notebooks (cleaning)
+    * OneDrive - Personal/Documents/
