@@ -191,3 +191,23 @@ _Note: MS Teams seems to be installed with MS Office._
   * Enter password
   * Authorize request with Microsoft Authenticator
     on another device.
+
+---
+
+## MS OneNote
+
+_Note: MS OneNote is installed with MS Office._
+
+_Note: This assumes that the work account is already
+signed in from the Outlook setup step._
+
+
+  * Open Microsoft OneNote
+  * Go to File -> Open Notebook
+  * Add a Place
+    * Click: OneDrive
+    * Add personal e-mail
+    * Select "Personal Account"
+    * Send notification to Authenticator
+  * Historical Notebooks (cleaning)
+    * OneDrive - Personal/Documents/
