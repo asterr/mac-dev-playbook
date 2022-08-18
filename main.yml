@@ -26,11 +26,13 @@
       when: configure_dock
       tags: ['dock']
     - role: asterr.macbook.pulse
-      tags: ['pulse']
+      tags: ['pulse', 'work']
     - role: asterr.macbook.vipaccess
-      tags: ['vipaccess']
+      tags: ['vipaccess', 'work']
     - role: asterr.macbook.msoffice
-      tags: ['msoffice']
+      tags: ['msoffice', 'work']
+    - role: asterr.macbook.iterm2
+      tags: ['iterm2', 'work']
 
   tasks:
     - import_tasks: tasks/sudoers.yml
