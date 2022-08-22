@@ -4,6 +4,7 @@ roles:
   - name: geerlingguy.dotfiles
   - name: asterr.mac-rosetta
     src: git+https://github.com/asterr/ansible-role-mac-rosetta.git
+  - name: gantsign.antigen
 
 collections:
   - name: geerlingguy.mac
