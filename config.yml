@@ -67,3 +67,6 @@ sublime_package_control:
   - "SublimeLinter-contrib-yamllint"
   - "TrailingSpaces"
   - "WordCount"
+
+homebrew_installed_packages:
+  - gnu-tar
