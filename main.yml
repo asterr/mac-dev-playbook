@@ -33,6 +33,21 @@
       tags: ['msoffice', 'work']
     - role: asterr.macbook.iterm2
       tags: ['iterm2', 'work']
+    - role: gantsign.antigen
+      tags: ['oh-my-zsh']
+      users:
+        - username: asterr
+          antigen_libraries:
+            - name: oh-my-zsh
+              env:
+                DISABLE_AUTO_UPDATE: '"true"'
+          antigen_theme:
+            name: robbyrussell
+          antigen_bundles:
+            - name: git
+            - name: gcloud
+            - name: kubectl
+            - name: pyenv
 
   tasks:
     - import_tasks: tasks/sudoers.yml
