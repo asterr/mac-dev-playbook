@@ -12,3 +12,5 @@ collections:
   #   type: dir
   - name: https://github.com/asterr/ansible-collection-macbook.git
     type: git
+  - name: https://github.com/asterr/google.cloud.git
+    type: git
