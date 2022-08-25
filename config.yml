@@ -42,7 +42,7 @@ dockitems_persist:
     path: "/Applications/VIP Access.app/"
   - name: "Microsoft Outlook"
     path: "/Applications/Microsoft Outlook.app"
-  - name: "iTerm2"
+  - name: "iTerm"
     path: "/Applications/iTerm.app"
 
 configure_sudoers: true
@@ -67,3 +67,6 @@ sublime_package_control:
   - "SublimeLinter-contrib-yamllint"
   - "TrailingSpaces"
   - "WordCount"
+
+homebrew_installed_packages:
+  - gnu-tar

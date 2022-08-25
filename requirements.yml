@@ -4,10 +4,13 @@ roles:
   - name: geerlingguy.dotfiles
   - name: asterr.mac-rosetta
     src: git+https://github.com/asterr/ansible-role-mac-rosetta.git
+  - name: gantsign.antigen
 
 collections:
   - name: geerlingguy.mac
   # - name: /Users/asterr/tmp/ansible-collection-macbook
   #   type: dir
   - name: https://github.com/asterr/ansible-collection-macbook.git
+    type: git
+  - name: https://github.com/asterr/google.cloud.git
     type: git
