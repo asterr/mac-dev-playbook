@@ -34,7 +34,7 @@
     - role: asterr.macbook.iterm2
       tags: ['iterm2', 'work']
     - role: gantsign.antigen
-      tags: ['oh-my-zsh']
+      tags: ['oh-my-zsh','work','personal']
       users:
         - username: asterr
           antigen_libraries:
