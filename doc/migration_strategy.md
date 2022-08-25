@@ -211,3 +211,12 @@ signed in from the Outlook setup step._
     * Send notification to Authenticator
   * Historical Notebooks (cleaning)
     * OneDrive - Personal/Documents/
+
+---
+
+## Gcloud
+
+_Note: Gcloud is installed by ansible into `~/utils/google-cloud-sdk`._
+
+  * gcloud auth login
+  * setup configurations (see ./gcloud-configs.md)
