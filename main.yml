@@ -50,6 +50,8 @@
             - name: pyenv
     - role: asterr.macbook.gcloud
       tags: ['gcloud', 'work']
+    - role: asterr.macbook.pyenv
+      tags: ['pyenv', 'work']
 
   tasks:
     - import_tasks: tasks/sudoers.yml
