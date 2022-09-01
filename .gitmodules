@@ -1,0 +1,15 @@
+[submodule "modules/ansible-collection-macbook"]
+	path = modules/ansible-collection-macbook
+	url = https://github.com/asterr/ansible-collection-macbook.git
+[submodule "modules/ansible-role-pyenv"]
+	path = modules/ansible-role-pyenv
+	url = https://github.com/asterr/ansible-role-pyenv.git
+[submodule "modules/dotfiles"]
+	path = modules/dotfiles
+	url = https://github.com/asterr/dotfiles.git
+[submodule "modules/google.cloud"]
+	path = modules/google.cloud
+	url = https://github.com/asterr/google.cloud.git
+[submodule "modules/ansible-role-mac-rosetta"]
+	path = modules/ansible-role-mac-rosetta
+	url = https://github.com/asterr/ansible-role-mac-rosetta.git

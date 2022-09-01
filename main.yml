@@ -18,7 +18,7 @@
       tags: ['homebrew']
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
-      tags: ['dotfiles']
+      tags: ['dotfiles','pyenv']
     - role: geerlingguy.mac.mas
       when: mas_installed_apps or mas_installed_app_ids
       tags: ['mas']
@@ -50,6 +50,8 @@
             - name: pyenv
     - role: asterr.macbook.gcloud
       tags: ['gcloud', 'work']
+    - role: asterr.macbook.pyenv
+      tags: ['pyenv', 'work']
 
   tasks:
     - import_tasks: tasks/sudoers.yml

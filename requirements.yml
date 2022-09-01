@@ -5,10 +5,12 @@ roles:
   - name: asterr.mac-rosetta
     src: git+https://github.com/asterr/ansible-role-mac-rosetta.git
   - name: gantsign.antigen
+  - name: staticdev.pyenv
+    src: git+https://github.com/asterr/ansible-role-pyenv.git
 
 collections:
   - name: geerlingguy.mac
-  # - name: /Users/asterr/tmp/ansible-collection-macbook
+  # - name: /Users/asterr/tmp/mac-dev-playbook/modules/ansible-collection-macbook
   #   type: dir
   - name: https://github.com/asterr/ansible-collection-macbook.git
     type: git
