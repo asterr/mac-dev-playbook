@@ -1,5 +1,6 @@
 ---
 dotfiles_repo: https://github.com/asterr/dotfiles.git
+dotfiles_repo_version: master
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
@@ -8,6 +9,7 @@ dotfiles_files:
   - .inputrc
   - .osx
   - .vimrc
+  - .gitconfig
 
 mas_installed_apps:
   - {id: 1193539993, "Brother iPrint&Scan"}
