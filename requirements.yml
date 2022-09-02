@@ -6,6 +6,7 @@ roles:
     src: git+https://github.com/asterr/ansible-role-mac-rosetta.git
   - name: gantsign.antigen
     src: git+https://github.com/asterr/ansible_role_antigen.git
+    version: master
   - name: staticdev.pyenv
     src: git+https://github.com/asterr/ansible-role-pyenv.git
 
