@@ -13,3 +13,6 @@
 [submodule "modules/ansible-role-mac-rosetta"]
 	path = modules/ansible-role-mac-rosetta
 	url = https://github.com/asterr/ansible-role-mac-rosetta.git
+[submodule "modules/ansible_role_antigen"]
+	path = modules/ansible_role_antigen
+	url = https://github.com/asterr/ansible_role_antigen.git
