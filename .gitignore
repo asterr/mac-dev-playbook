@@ -3,3 +3,4 @@
 *.retry
 roles*
 host_vars/127.0.0.1.yml
+log
