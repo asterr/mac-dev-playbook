@@ -52,6 +52,8 @@
       tags: ['gcloud', 'work']
     - role: asterr.macbook.pyenv
       tags: ['pyenv', 'work']
+    - role: asterr.macbook.iodata
+      tags: ['iodata', 'home']
 
   tasks:
     - import_tasks: tasks/sudoers.yml
