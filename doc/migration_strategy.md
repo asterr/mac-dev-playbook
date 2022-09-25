@@ -220,3 +220,17 @@ _Note: Gcloud is installed by ansible into `~/utils/google-cloud-sdk`._
 
   * gcloud auth login
   * setup configurations (see ./gcloud-configs.md)
+
+---
+
+## Youtube Music
+
+_Note: Youtube Music is install by ansible._
+
+_Need to review if any actions are actually required._
+
+  * Manually Open from /Applications and accept prompt (if error about application downloaded from the Internet.)
+  * Need to sign in:
+    * Google ID (personal)
+    * Google Password
+    * Google 2FA
