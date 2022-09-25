@@ -57,3 +57,26 @@ drwxr-xr-x@   5 root  wheel   160 Aug 24 17:59 usr
 ```
 ➜  ~ sudo rsync -avP "/Volumes/.timemachine/810F1D0D-95E8-4060-BAE9-A426786BBF63/2022-09-20-063817.backup/2022-09-20-063817.backup/Macintosh HD - Data/Users/" /System/Volumes/Data/test-recovery/
 ```
+
+---
+
+## Create a Persistent Volume
+
+A basic persistent directory can be created under:
+
+    /System/Volumes/Data
+
+The volume can be linked under the root directory, using
+`/etc/synthetic.conf`.
+
+  * IMPORTANT: the file is tab delimited.
+  * In vim, may need to use: `set noexpandtab`
+
+Example:
+
+```
+ $ ls -l /etc/synthetic.conf
+-rw-r--r--  1 root  wheel  36 Sep 24 19:49 /etc/synthetic.conf
+ $ cat /etc/synthetic.conf
+afs-foo System/Volumes/Data/afs-foo
+```
