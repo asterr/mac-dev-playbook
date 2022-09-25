@@ -54,6 +54,8 @@
       tags: ['pyenv', 'work']
     - role: asterr.macbook.iodata
       tags: ['iodata', 'home']
+    - role: asterr.macbook.youtubemusic
+      tags: ['youtubemusic', 'home', 'work']
 
   tasks:
     - import_tasks: tasks/sudoers.yml
