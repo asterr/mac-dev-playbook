@@ -29,31 +29,49 @@ max_resp_timeout=180
 ## Restore Data from Time Machine
 
   * Open Finder
-  * Open TimeMachine "landisk-c35992" (AFP) 
-    * Should be connected as Guest
-<!--   * Connect to Server: `smb://landisk-c35992/TimeMachine`
-  * Accept connection attempt and connect as "Guest"
- -->
- 
-  * From a terminal:
-    ```
-    hdiutil attach /Volumes/TimeMachine/Aaron\ Sterr’s\ MacBook\ Pro.sparsebundle
-    ```
+  * Connect to Server: `smb://landisk-c35992/TimeMachine`
+    * Accept connection attempt and connect as "Guest"
 
-<!--   * In Finder
-  * Open /Volumes/TimeMachine
-  * Open `Aaron Sterr's MacBook Pro.sparsebundle` 
- -->
+  * In Finder
+    * Open /Volumes/TimeMachine
+    * Open `Aaron Sterr's MacBook Pro.sparsebundle`
+
   * A new volume window should appear:
     `/Volumes/Backups of Aaron Sterr's MacBook Pro`
-  * Select the desired backup time. (e.g. `2022-10-01-121745`)
+  * Select the desired backup time. (e.g. `2022-10-02-063044`)
 
   * A new hidden mount should be visible in df:
-    `/Volumes/.timemachine/810F1D0D-95E8-4060-BAE9-A426786BBF63/2022-10-01-121745.backup`
+    `/Volumes/.timemachine/C2D76FA9-7860-443C-A846-B36C5D658239/2022-10-02-063044.backup`
 
   * change directory to this backup
-   
 
+  * If the shell reports "Operation not permitted"
+    * Open Security and Privacy in System Preferences
+    * Check Full Disk Access
+      * Grant access to iTerm.app if not already granted.
+      * Restart iTerm.app after granting permissions
+
+  * The backup will be under a directory like `2022-10-02-063044.backup`
+    * _This is repeated in the path._
+
+  ```
+  ➜  2022-10-02-063044.backup ls -l
+total 16
+drwxr-xr-x@ 5 root  wheel   160 Oct  2 06:27 2022-10-02-063044.backup
+-rw-r--r--@ 1 root  wheel  4670 Oct  2 05:30 backup_manifest.plist
+➜  2022-10-02-063044.backup cd 2022-10-02-063044.backup
+➜  2022-10-02-063044.backup pwd
+/Volumes/.timemachine/C2D76FA9-7860-443C-A846-B36C5D658239/2022-10-02-063044.backup/2022-10-02-063044.backup
+  ```
+
+  * Rsync files as desired.
+    * sudo if files are owned by multiple users.
+
+```
+➜  Macintosh HD - Data pwd
+/Volumes/.timemachine/C2D76FA9-7860-443C-A846-B36C5D658239/2022-10-02-063044.backup/2022-10-02-063044.backup/Macintosh HD - Data
+➜  Macintosh HD - Data sudo rsync -avP Users/ /System/Volumes/Data/recovered/2022-10-02/Users/
+```
 
 
 
@@ -92,8 +110,15 @@ max_resp_timeout=180
   * Sidebar -> Show
     * asterr
     * Aaron's MacBook Pro
-    
-## Fix Media Key Mappings
+
+## Start Flycut
+
+_Clipboard with history_
+
+  * Run Flycut.app
+  * Add Flycut.app to "Accessibility" apps in Security and Privacy.
+
+## Fix Media Key Mappings -- Fixed by using correct app
 
   * Download Karabiner-Elements v14.10.0
     * https://karabiner-elements.pqrs.org/
@@ -101,17 +126,21 @@ max_resp_timeout=180
 
 _This might not be useful...._
 
+_NOTE: I uninstalled Karabiner_
+
   * Disable Apple Music
     ```
     launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
     ```
 
+_NOTE: I did not disable Apple Music._
+
+
   * Install YT Music from Brew
     ```
     brew install --cask yt-music
-    
+    ```
+
   * NOTE: YouTube Music Desktop is *wrong*
   * NOTE: I should have setup YT Music in the first place (was using on old mac.)
-  
-
-    ```
+  * See: https://github.com/steve228uk/YouTube-Music
