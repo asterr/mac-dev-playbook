@@ -144,3 +144,76 @@ _NOTE: I did not disable Apple Music._
   * NOTE: YouTube Music Desktop is *wrong*
   * NOTE: I should have setup YT Music in the first place (was using on old mac.)
   * See: https://github.com/steve228uk/YouTube-Music
+
+----
+
+## Install Parallels
+
+  * https://www.parallels.com/jp/
+  * Click My Account
+  * Login (personal e-mail / Google)
+  * Download "Parallels Dekstop for Mac Pro Edition"
+  * Open "Install Parallels Desktop.dmg"
+  * Click "Install Parallels Desktop.app"
+
+## Install Windows 11
+
+  * Select "Windows 11 Home"
+  * Click "Install Windows"
+    * Takes about 15-20 minutes
+  * Accept License
+  * Sign in to Windows
+    * Personal Account
+
+  * Activate Windows
+    * Preferences
+    * System -> Activation
+    * Troubleshoot
+    * I changed hardware on this device recently
+    * Pick the old Windows 11 Home license for Parallels (unused)
+
+----
+
+## Install ExpressVPN
+
+_Needs to be done on the Mac Host_
+
+  * https://www.expressvpn.com/
+  * Click "My Account"
+  * Login with personal email
+  * Dowload for Mac
+  * Open the Pkg File:
+    * expressvpn_mac_11.9.0.70037_release.pkg
+  * Sign In (Express VPN App)
+  * Do not launch on startup
+
+----
+
+## Install Quicken (in Windows)
+
+  * Download Quicken.exe from https://quicken.com
+  * Install in Windows
+  * Copy `~/Documents/Quicken to the new machine.`
+  * Start the ExpressVPN, connected to the US. (on the Mac host)
+  * Open Quicken in Windows.
+  * Select the existing `asterr-current.qdf` file.
+  * Login to Quicken to activate.
+    * Use personal e-mail and Quicken password.
+
+----
+
+## Install Duplicati
+
+  * https://github.com/duplicati/duplicati/releases
+    * duplicati-2.0.6.104_canary_2022-06-15.dmg
+  * Open duplicati-2.0.6.104_canary_2022-06-15.dmg
+  * Copy to Applications
+  * Run Duplicati
+    * Will warn that mono is required
+  * Click Download
+    * Goes to: https://www.mono-project.com/download/stable/#download-mac
+  * Download "Mono 6.12.0 (Visual Studio channel)" for macOS
+  * Open the downloaded pkg file:
+    * MonoFramework-MDK-6.12.0.182.macos10.xamarin.universal.pkg
+
+TODO: Start properly
