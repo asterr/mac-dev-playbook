@@ -211,6 +211,15 @@ _Disk usage visualization utility._
 
 ----
 
+## Register Sublime
+
+_The key is in email from 2021-05-20_
+
+  * Open Sublime Text
+  * Help -> Enter License
+
+----
+
 ## Install Duplicati
 
   * https://github.com/duplicati/duplicati/releases
