@@ -220,6 +220,14 @@ _The key is in email from 2021-05-20_
 
 ----
 
+## Fix workspace order
+
+  * Preferences
+  * Mission Control
+  * Disable: Automatically rearrange Spaces based on most recent use
+
+----
+
 ## Install Duplicati
 
   * https://github.com/duplicati/duplicati/releases
