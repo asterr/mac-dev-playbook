@@ -20,6 +20,12 @@ Repositories
   * Settings:
     * General:Name: Zeus-Ubuntu
     * Option:Startup and Shutdown: Always Ready in the Background
+    * Options:Sharing:
+      * Share custom Mac folders with Linux
+        * Share cloud folders with Linux
+        * Share Mac volumes with Linux
+        * "Manage Folders":
+          * Add "asterr"
     * Backup:SmartGuard: Enable
   * Restart: Parallels Desktop
 
@@ -104,3 +110,85 @@ _Parallels creates a user "parallels" with uid 1000._
       # email: personal
       # token: from ansible debug command above
     ```
+
+----
+
+### Run Ansible
+
+  * create ~asterr/.vault_pass
+  * install dependencies
+    ```
+    cd ~asterr/zeus-ansible
+    ansible-galaxy install -r requirements.yml
+    ```
+  * run the playbook
+    ```
+    cd ~asterr/zeus-ansible
+    ansible-playbook site.yml -v
+    ```
+
+----
+
+### Recover the Home Directory
+
+  * import one of the zeus duplicati configs (encrypted)
+    * `zeus-home-001-duplicati-config.json.aes`
+  * disable the schedule
+  * repair the database
+  * restore to: /home/asterr/recover
+
+  * swap files around
+    ```
+    sudo mv /home/asterr /home/asterr.new
+    sudo mv /home/asterr.new/recover /home/asterr
+    rsync -avP /home/asterr.new/zeus-ansible /home/asterr
+    rsync -avP /home/asterr.new/ansible-runner.sh /home/asterr
+    rsync -avP /home/asterr.new/.vault_pass /home/asterr
+    ```
+
+----
+
+### Rebuild Backups
+
+Rename the local backups:
+
+```
+cd /mnt/duplicati001
+sudo mv zeus-home-001 zeus-home-001.20221006-old-host
+cd /mnt/duplicati002
+sudo mv zeus-home-002 zeus-home-002.20221006-old-host
+```
+
+Rename AWS backups
+
+  * Install the awscli
+    ```
+    sudo apt install awscli
+    aws configure
+      # enter AWS Access Key
+    ```
+  * Open https://console.aws.amazon.com
+  * Open S3
+  * Create a new bucket
+    * `duplicati-zeus-home-aws-20221006-old-host`
+    * Copy settings from `duplicati-zeus-home-aws`
+    * Create bucket
+  * Copy bucket contents
+    ```
+    aws s3 sync s3://duplicati-zeus-home-aws s3://duplicati-zeus-home-aws-20221006-old-host
+    ```
+
+Repeat for each of:
+
+  * zeus-home-001
+  * zeus-home-002
+  * zeus-home-aws
+
+Load the backup config and create a new version
+
+  * Move old backups
+  * Open http://localhost:8200 (on zeus)
+  * Add backup
+    * Import from a file
+    * See: asterr/tmp/duplicati/zeus
+    * Enter the encryption key
