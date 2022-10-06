@@ -220,6 +220,43 @@ _The key is in email from 2021-05-20_
 
 ----
 
+## Install OmniFocus
+
+  * https://omnigroup.com
+  * Signin:
+    * personal e-mail
+  * Download Omnifocus for Mac
+  * Install
+  * Setup Sync
+    * personal e-mail
+  * Add license
+    * see email from: 2018-10-01
+  * Preferences:
+    * Layout: Columns
+      * Add "deferred date"
+    * Style:Font size: Small
+    * Style:Color Palette: Color Text in the Outline
+    * Dates & Times:Due Soon Means: 1 week
+  * Fix Favorite Perspectives
+    * Inbox
+    * Forecast
+      * Show deferred items
+    * Todo
+    * Review
+    * Due Daily
+    * Projects
+    * Chores
+
+----
+
+## Fix Parallels Networking
+
+_The shared network is in 10.0.0.0/8 which is used for corporate._
+
+
+
+----
+
 ## Fix workspace order
 
   * Preferences
