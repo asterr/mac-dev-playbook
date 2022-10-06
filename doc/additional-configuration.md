@@ -202,6 +202,15 @@ _Needs to be done on the Mac Host_
 
 ----
 
+## Install Purple Tree
+
+_Disk usage visualization utility._
+
+  * Already purchased in App Store.
+  * Download via App Store.
+
+----
+
 ## Install Duplicati
 
   * https://github.com/duplicati/duplicati/releases
