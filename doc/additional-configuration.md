@@ -253,7 +253,23 @@ _The key is in email from 2021-05-20_
 
 _The shared network is in 10.0.0.0/8 which is used for corporate._
 
+  * Original: 10.211.55.0/24
+  * Target: 172.16.122.0/24
 
+Process:
+
+  * Open Parallels Desktop
+  * Open Preferences -> Network
+  * Select "Shared"
+  * Connect Mac to this Network: Enabled (default)
+  * Start address: 172.16.122.1
+  * End address: 172.16.122.254
+  * Subnet mask: 255.255.255.0
+  * Restart Parallels Desktop
+
+_Note: Something happened when I attempted to restart
+Parallels Desktop, and I end up needed to force quit
+and reboot my Mac._
 
 ----
 
