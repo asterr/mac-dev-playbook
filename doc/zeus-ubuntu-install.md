@@ -18,7 +18,7 @@ Repositories
   * Download Ubuntu Linux
   * Wait for install to complete -- about 30 minutes.
   * Settings:
-    * General:Name: Zeus-Ubuntu
+    * General:Name: zeus
     * Option:Startup and Shutdown: Always Ready in the Background
     * Options:Sharing:
       * Share custom Mac folders with Linux
@@ -28,6 +28,10 @@ Repositories
           * Add "asterr"
     * Backup:SmartGuard: Enable
   * Restart: Parallels Desktop
+  * Unmimize the install
+    ```
+    sudo unminimize
+    ```
 
 ----
 
