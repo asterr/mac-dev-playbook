@@ -273,6 +273,35 @@ and reboot my Mac._
 
 ----
 
+## ITerm Hot Key
+
+  * Open Automator
+  * Create new Quick Action document
+    * Workflow receives: no input
+    * in "any application"
+    * Add "Run AppleScript" action:
+      ```
+      on run {input, parameters}
+        tell application "iTerm"
+          create window with default profile
+        end tell
+        return input
+      end run
+      ```
+  * Save action as "iTermLauncher"
+
+  * Open System Preferences
+  * Keyboard -> Shortcuts
+  * Select "Services"
+  * Find "iTermLauncher" under "General"
+  * Set Key to: Cmd+9
+
+_Note: If it doesn't work, manually run the "service" from the
+application menu that is in focus.  Each application needs to
+be granted access to control iTerm._
+
+----
+
 ## Fix workspace order
 
   * Preferences
