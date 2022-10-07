@@ -281,6 +281,130 @@ and reboot my Mac._
 
 ----
 
+## Setup Mac Mail
+
+  * Preferences:
+    * General:
+      * Check for new messages: Automatically
+      * New messages sound: None
+      * Automatically try sending later if outgoing server is
+        unavailable: True
+
+  * Customize Toolbar
+    * Menu: View: Customize Toolbar
+    * Show: Icon and Text
+    * Items:
+      * Get Mail
+      * Tags
+      * Archive
+      * Delete
+      * Junk
+      * Reply
+      * Reply All
+      * Forward
+      * New Message
+      * Hide Related Messages
+      * Search
+
+  * Accounts:
+    * home-imap:
+      * Account Information
+        * Enable this account: True
+        * Description: home-imap
+        * Email Address: Aaron Sterr (home) <asterr@pobox.com>
+        * Download Attachments: All
+      * Mailbox Behavior:
+        * Drafts Mailbox: MailMac/Drafts
+        * Sent Mailbox: MailMac/Sent Messages
+        * Junk Mailbox: All Junk
+        * Erase junk messages: Never
+        * Trash Mailbox: MailMac/Deleted Messages
+        * Erase deleted messages: After one month
+        * Archive Mailbox: Archive
+      * Server Settings/Incoming Mail Server (IMAP):
+        * User Name: asterr
+        * Password:
+        * Host Name: zeus
+        * Automatically manage connection settings: False
+        * Port: 993 (Use TLS/SSL)
+        * Authentication: Password
+        * Advance IMAP Settings:
+          * IMAP Path Prefix: MailMac
+          * TLS Certificate: None
+          * Allow insecure authentication: False
+      * Server Settings/Outgoing Mail Server (SMTP)
+        * Account: asterr@pobox.com
+        * User Name: asterr@pobox.com
+        * Password: 
+        * Host Name: smtp.pobox.com
+        * Automatically manage connection settings: False
+        * Port: 465 (Use TLS/SSL)
+        * Authentication: Password
+    * Pobox
+      * Account Information
+        * Enable this account: True
+        * Description: Pobox
+        * Email Address: Aaron Sterr <asterr@pobox.com>
+        * Download Attachments: Recent
+      * Mailbox Behavior:
+        * Drafts Mailbox: INBOX/Drafts
+        * Sent Mailbox: INBOX/Sent
+        * Junk Mailbox: INBOX/Spam
+        * Erase junk messages: Never
+        * Trash Mailbox: INBOX/Trash
+        * Erase deleted messages: After one month
+        * Archive Mailbox: INBOX/Archive
+      * Server Settings/Incoming Mail Server (IMAP):
+        * User Name: asterr@pobox.com
+        * Password:
+        * Host Name: mail.pobox.com
+        * Automatically manage connection settings: False
+        * Port: 993 (Use TLS/SSL)
+        * Authentication: Password
+        * Advance IMAP Settings:
+          * IMAP Path Prefix: INBOX
+          * TLS Certificate: None
+          * Allow insecure authentication: False
+      * Server Settings/Outgoing Mail Server (SMTP)
+        * Account: asterr@pobox.com
+        * User Name: asterr@pobox.com
+        * Password: 
+        * Host Name: smtp.pobox.com
+        * Automatically manage connection settings: False
+        * Port: 465 (Use TLS/SSL)
+        * Authentication: Password
+  * Viewing:
+    * List Preview: 1 line
+    * Display unread messages with bold font: True
+  * Composing:
+    * Check spelling: Never
+    * When sending to a group, show all member addresses: True
+
+Fix Rules:
+
+  * Quit Mail
+  * Copy: `~/Library/Mail/V9/SyncedRules.plist` to `~/Library/Mail/V9/UnsyncedRules.plist`
+  * Start Mail
+  * Verify the rules.
+  * Remove any duplicates.
+
+_Note: UnsyncedRules get added to SyncedRules by Mail._
+
+----
+
+## Install MailTags
+
+  * Download MailSuite 2021
+    * https://smallcubed.com/#sc_download
+    * 30-Day Trial (will add license next)
+    * Install (only MailTags)
+  * Start Mail
+    * The Build Tag Library will begin (takes a long time)
+
+TODO: Register
+
+----
+
 ## Install Duplicati
 
   * https://github.com/duplicati/duplicati/releases
