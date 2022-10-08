@@ -117,6 +117,12 @@ _Clipboard with history_
 
   * Run Flycut.app
   * Add Flycut.app to "Accessibility" apps in Security and Privacy.
+  * Add Flycut to Login Items
+    * Open System Preferences
+    * Users and Groups
+    * Select primary login account
+    * Click Login Items
+    * Add Flycut.app
 
 ## Fix Media Key Mappings -- Fixed by using correct app
 
@@ -345,7 +351,7 @@ be granted access to control iTerm._
       * Mailbox Behavior:
         * Drafts Mailbox: MailMac/Drafts
         * Sent Mailbox: MailMac/Sent Messages
-        * Junk Mailbox: All Junk
+        * Junk Mailbox: MailMac/Spam
         * Erase junk messages: Never
         * Trash Mailbox: MailMac/Deleted Messages
         * Erase deleted messages: After one month
@@ -429,6 +435,12 @@ _Note: UnsyncedRules get added to SyncedRules by Mail._
     * Install (only MailTags)
   * Start Mail
     * The Build Tag Library will begin (takes a long time)
+  * Register
+    * Code from 2018-10-17 (see mail)
+    * Mail Menu -> Smallcubed MailSuite
+    * Purchase Registration
+    * Enter the Registration Code
+    * Click OK
 
 TODO: Register
 
