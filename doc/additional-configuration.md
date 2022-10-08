@@ -539,6 +539,34 @@ _Note: MsgFiler is installed from the App Store by Ansible._
     * Pulse Secure
     * Mini Calendar
 
+----
+
+## Install SpamSieve
+
+  * Download: http://c-command.com/downloads/SpamSieve-current.dmg
+  * Restore: `~/Library/Application Support/SpamSieve`
+  * Install SpamSieve.app
+  * Register app with details from purchase
+  * Set Up for Apple Mail
+    * Grant "Full Disk Access" to SpamSieve
+      * System Preferences:Security & Privacy:Privacy
+    * Quit Mail
+    * Open SpamSieve
+    * SpamSieve -> Install Apple Mail Plug-In
+    * Open Mail
+    * Enable the SpamSieve Plugin
+  * Restore: `~/Library/Mail/SpamSieve/com.c-command.SpamSieve.plist`
+  * Enable SpamSieve Rule
+    * Mail Preferences -> Rules
+    * Create "SpamSieve" Rule (name must begin with SpamSieve)
+    * If "any" of the folllowing conditions are met:
+      * "Every Message"
+    * Perform the following actions:
+      * Move Message to mailbox "Junk" (pobox)
+  * Move the SpamSieve rule to the top of the rule list.
+  * SpamSieve Preferences
+    * Notification
+      * Play sound: False
 
 ----
 
