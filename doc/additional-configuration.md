@@ -465,8 +465,17 @@ _Note: UnsyncedRules get added to SyncedRules by Mail._
     * Purchase Registration
     * Enter the Registration Code
     * Click OK
-
-TODO: Register
+  * Configuration
+    * Open Mail Preferences -> MailTags
+      * General
+        * Tag Window: select all
+        * Show tag panel when composing: False
+        * Send tags with message: True
+      * Keywords
+        * Auto add new keywords to preferred list: True
+        * Number of recent items: 25
+        * Sort order for display on messages: By Frequency and Alphabetical
+        * Gear: Collect Keywords
 
 ----
 
