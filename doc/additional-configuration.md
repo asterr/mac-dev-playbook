@@ -161,6 +161,8 @@ _NOTE: I did not disable Apple Music._
   * Download "Parallels Dekstop for Mac Pro Edition"
   * Open "Install Parallels Desktop.dmg"
   * Click "Install Parallels Desktop.app"
+  * Parallels Preferences
+    * General:Virtual machine Dock icons: None
 
 ## Install Windows 11
 
@@ -567,6 +569,21 @@ _Note: MsgFiler is installed from the App Store by Ansible._
   * SpamSieve Preferences
     * Notification
       * Play sound: False
+
+----
+
+## Add Folders to Dock
+
+  * Open Finder
+  * Open Macintosh HD
+  * Drag "Applications" to the Dock.
+    * Set Display as Folder
+    * Set View as Fan
+  * Open asterr
+  * Drag "Documents" to the Dock.
+    * Set Display as Folder
+    * Set View as Fan
+    * Sort by Date Modified
 
 ----
 
