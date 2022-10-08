@@ -456,7 +456,7 @@ _Note: UnsyncedRules get added to SyncedRules by Mail._
   * Download MailSuite 2021
     * https://smallcubed.com/#sc_download
     * 30-Day Trial (will add license next)
-    * Install (only MailTags)
+    * Install (only MailTags and MailActon)
   * Start Mail
     * The Build Tag Library will begin (takes a long time)
   * Register
@@ -476,6 +476,69 @@ _Note: UnsyncedRules get added to SyncedRules by Mail._
         * Number of recent items: 25
         * Sort order for display on messages: By Frequency and Alphabetical
         * Gear: Collect Keywords
+
+
+_Note: Mail Act-On F3 will move messages._
+
+----
+
+## Install MsgFiler
+
+_Note: MsgFiler is installed from the App Store by Ansible._
+
+  * Open MsgFiler
+  * Gear:
+    * Keep MsgFiler Open After Filing: False
+    * Pressing Enter Always Performs Default Action: True
+  * Preferences
+    * Filing:
+      * Keep MsgFiler open after filing: False
+      * Use MsgFiler Enginer to file engines: True
+        * Mark messages as read: True
+  * If "MsgFiler Engine Not Installed" pops up
+    * Open: https://msgfiler.com/support/engine/
+    * Download MsgFiler Engine Version 1.6.2
+    * Quit Mail
+    * In Finder, open: Library/Mail/Bundles
+    * Drag: "MsgFilerEngine.mailbundle" to the Bundles folder.
+    * Reopen Mail
+    * Open Mail Preferences
+    * General -> Manage Plugins
+    * Enable MsgFilerEngine.mailbundle
+    * Restart MacMail
+  * Enable Bundles for MacMail
+    ```
+    sudo defaults write "/Library/Preferences/com.apple.mail" EnableBundles 1
+    defaults write com.apple.mail EnableBundles -bool true
+    defaults write com.apple.mail BundleCompatibilityVersion 4
+    ```
+  * Permissions for MsgEngine
+    * Open System Preferences -> Security & Privacy
+    * Privacy
+    * Accessibility
+      * Add MsgFiler.app
+    * Automation:
+      * Check: MsgFiler.app/Mail.app
+    * Restart Mail and MsgFiler
+
+  * Add MsgFiler to login items
+    * System Preferences
+    * Users & Groups
+    * Current User
+    * Login Items
+      * MsgFiler.app
+
+----
+
+## Fix Login Items
+
+  * System Preferences
+  * Users & Groups
+  * Current User
+  * Login Items
+    * Pulse Secure
+    * Mini Calendar
+
 
 ----
 
