@@ -180,7 +180,7 @@ _NOTE: I did not disable Apple Music._
 
 ----
 
-## Install ExpressVPN
+## Install ExpressVPN -- Cancelled
 
 _Needs to be done on the Mac Host_
 
@@ -193,6 +193,24 @@ _Needs to be done on the Mac Host_
   * Sign In (Express VPN App)
   * Do not launch on startup
 
+Uninstall:
+
+  * Cancel subscription
+    * https://www.expressvpn.com
+    * Click "My Account"
+    * Login with personal email
+    * Click "My Subscription"
+    * Click "Edit subscription settings"
+    * Turn Off Automatic Renewal
+  * Quit ExpressVPN, if it is running
+  * Open Applications
+    * Move "ExpressVPN.app" to the trash
+  * Remove "ExpressVPN Launcher" from Login Items
+    * System Preferences -> Users & Groups
+    * Select current user
+    * Login Items
+    * Remove "ExpressVPN Launcher" from the list
+
 ----
 
 ## Install Quicken (in Windows)
@@ -201,6 +219,12 @@ _Needs to be done on the Mac Host_
   * Install in Windows
   * Copy `~/Documents/Quicken to the new machine.`
   * Start the ExpressVPN, connected to the US. (on the Mac host)
+    * This might or might not be required.  It didn't work reliably.
+    * ProtonVPN or other solutions might be equally viable.
+    * Or Quicken might start working again for non-US IP addresses.
+    * Symptoms are:
+      * Verify username and password
+      * Attempt to activate still results in "credentials error"
   * Open Quicken in Windows.
   * Select the existing `asterr-current.qdf` file.
   * Login to Quicken to activate.
