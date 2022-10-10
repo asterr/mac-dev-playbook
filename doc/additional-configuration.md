@@ -73,6 +73,15 @@ drwxr-xr-x@ 5 root  wheel   160 Oct  2 06:27 2022-10-02-063044.backup
 ➜  Macintosh HD - Data sudo rsync -avP Users/ /System/Volumes/Data/recovered/2022-10-02/Users/
 ```
 
+  * Exclude Recovered files from Spotlight
+    * Open System Preferences -> Spotlight
+    * Privacy
+    * Add /System/Volumes/Data/recovered
+    * Rebuild Spotlight Index
+      ```
+      sudo mdutil -d /System/Volumes/Data
+      sudo mdutil -i on /System/Volumes/Data
+      ```
 
 
 ## Desktop
