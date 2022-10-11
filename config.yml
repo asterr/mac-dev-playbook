@@ -93,3 +93,4 @@ homebrew_installed_packages:
   - tree
   - git-secret
   - gnupg
+  - wget
