@@ -90,3 +90,4 @@ sublime_package_control:
 homebrew_installed_packages:
   - gnu-tar
   - zsh-history-substring-search
+  - tree
