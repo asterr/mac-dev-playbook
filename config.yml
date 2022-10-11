@@ -91,3 +91,5 @@ homebrew_installed_packages:
   - gnu-tar
   - zsh-history-substring-search
   - tree
+  - git-secret
+  - gnupg
