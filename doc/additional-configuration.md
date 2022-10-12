@@ -596,6 +596,20 @@ _Note: MsgFiler is installed from the App Store by Ansible._
 
 ----
 
+## Enable Time Machine
+
+  * Open System Preferences -> Time Machine
+  * Select Disk: New Disk
+    * Use: smb://landisk-c35992/TimeMachine
+      * Connect as Guest
+    * Backup is: `Aaron's MacBook Pro.sparsebundle`
+  * Back Up Automatically: True
+  * Show Time Machine in Menu Bar: True
+  * Options -> Exclusions:
+    * None
+
+----
+
 ## Install Duplicati
 
   * https://github.com/duplicati/duplicati/releases
