@@ -94,3 +94,4 @@ homebrew_installed_packages:
   - git-secret
   - gnupg
   - wget
+  - mkdocs
