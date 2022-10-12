@@ -95,3 +95,4 @@ homebrew_installed_packages:
   - gnupg
   - wget
   - mkdocs
+  - jq
