@@ -1,3 +1,9 @@
+## Fix Display Manually
+
+  * Open System Preferences -> Displays:
+    * Scaled to More Space
+    * Adjust arrangement for multiple monitors
+
 ## Create local volumes
 
 mkdir /System/Volumes/Data/naibu
