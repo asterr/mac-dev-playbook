@@ -602,6 +602,43 @@ _Note: MsgFiler is installed from the App Store by Ansible._
 
 ----
 
+## Install RVM (Ruby)
+
+From: https://nrogap.medium.com/install-rvm-in-macos-step-by-step-d3b3c236953b
+
+  * `\curl -sSL https://get.rvm.io | bash`
+
+
+** TODO: 1.8.7 won't build on Mac M1 so far**
+
+Support for 1.8.7 on Mac:
+
+  * See: https://github.com/rvm/rvm/issues/5033
+  * Download: https://github.com/openssl/openssl/releases/tag/OpenSSL_1_0_2u
+  * `cd openssl-OpenSSL_1_0_2u`
+  * `./Configure darwin64-x86_64-cc --prefix=/usr/local/opt/openssl@1.0`
+  * `make`
+  * `make test`
+  * `sudo make install`
+
+Build RVM with openssl@1.0
+
+  * `export RUBY_CFLAGS=-DUSE_FFI_CLOSURE_ALLOC`
+  * `export optflags="-Wno-error=implicit-function-declaration"`
+  * `export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk`
+  * `export CPPFLAGS=-I/usr/local/opt/openssl@1.0/include`
+  * `export CPPFLAGS=-I${SDKROOT}/usr/include`
+  * `export CFLAGS=-I${SDKROOT}/usr/include`
+  * `PATH=/usr/local/opt/openssl@1.0/bin:$PATH`
+  * `rvm autolibs disable`
+  * `brew install gcc`
+  * `arch -x86_64 rvm install 1.8.7-p374 --with-openssl-dir=/usr/local/opt/openssl@1.0`
+  * `arch -x86_64 rvm install 1.8.7-p374 --with-openssl-dir=/usr/local/opt/openssl@1.0 --autolibs=disable --with-gcc=gcc`
+
+  * rvm install 1.8.7-p374 --with-openssl-dir=/usr/local/opt/openssl@1.0
+  * rvm install 1.8.7-head --with-openssl-dir=/usr/local/opt/openssl@1.0
+----
+
 ## Enable Time Machine
 
   * Open System Preferences -> Time Machine
