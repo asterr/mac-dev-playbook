@@ -653,6 +653,28 @@ Build RVM with openssl@1.0
 
 ----
 
+## Install Backblaze
+
+  * Login to: https://secure.backblaze.com/user_signin.htm
+    * User: `asterr@pobox.com`
+    * Need password
+    * Need token
+
+  * Download:
+    * https://secure.backblaze.com/mac/install_backblaze.dmg
+    * Open the installer
+    * Run "Backblaze Installer.app"
+    * Provide the account: asterr@pobox.com when installing
+
+
+  * Have 15 days to either:
+    * Inherit Backup State
+    * Delete the previous backup:
+        * Frees up the license
+        * Then assign the license to the new computer
+
+----
+
 ## Install Duplicati
 
   * https://github.com/duplicati/duplicati/releases
