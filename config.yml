@@ -88,13 +88,52 @@ sublime_package_control:
   - "WordCount"
 
 homebrew_installed_packages:
-  - gnu-tar
-  - zsh-history-substring-search
-  - tree
+  # - ansible # Installed via Pip.
+  - autoconf
+  - bash-completion
+  - doxygen
+  - gettext
+  - gifsicle
+  - git
   - git-secret
+  - github/gh/gh
+  - gnu-tar
   - gnupg
-  - wget
-  - mkdocs
+  - go
+  - gpg
+  - httpie
+  - iperf
   - jq
+  - libevent
+  - sqlite
+  - mcrypt
+  - mkdocs
+  - nmap
+  - node
   - npm
+  - nvm
+  - php
+  - ssh-copy-id
+  - cowsay
+  - readline
+  - openssl
+  - pv
+  - tree
+  - wget
+  - wrk
+  - zsh-history-substring-search
+
+homebrew_cask_apps:
   - bluesnooze
+  - chromedriver
+  - docker
+  - dropbox
+  - firefox
+  - google-chrome
+  - handbrake
+  - licecap
+  - sequel-ace
+  - slack
+  - sublime-text
+  - transmit
+  - vagrant
