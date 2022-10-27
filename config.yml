@@ -97,3 +97,4 @@ homebrew_installed_packages:
   - mkdocs
   - jq
   - npm
+  - bluesnooze
