@@ -23,7 +23,7 @@ dir_cache_async_cnt=20
 dir_cache_max_cnt=20480
 # ----------------------
 # tuning
-protocol_vers_map=4
+protocol_vers_map=6
 streams=yes
 soft=yes
 notify_off=yes
