@@ -701,6 +701,18 @@ nas:
       - duplicati002
 ```
 
+### Import Backup Jobs
+
+Load the backup config and create a new version
+
+  * Move old backups
+  * Open http://localhost:8200
+  * Add backup
+    * Import from a file
+    * See: asterr/tmp/duplicati/macbook
+    * Enter the encryption key
+
+
 ### Old Manual Steps
 
   * https://github.com/duplicati/duplicati/releases
