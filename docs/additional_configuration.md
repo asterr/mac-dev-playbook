@@ -677,6 +677,32 @@ Build RVM with openssl@1.0
 
 ## Install Duplicati
 
+  * Add configuration to `host_vars/127.0.0.1.yml`
+  * Run `ansible-playbook main.yml -vv --tags duplicati`
+
+### Sample Config for Shares
+
+```
+---
+nas:
+  duplicati001:
+    username: asterr
+    password: **REDACTED**
+    nas_ip_address: 192.168.2.143
+    nas_shares:
+      - duplicati001
+      - Public
+
+  duplicati002:
+    username: asterr
+    password: **REDACTED**
+    nas_ip_address: 192.168.2.144
+    nas_shares:
+      - duplicati002
+```
+
+### Old Manual Steps
+
   * https://github.com/duplicati/duplicati/releases
     * duplicati-2.0.6.104_canary_2022-06-15.dmg
   * Open duplicati-2.0.6.104_canary_2022-06-15.dmg
