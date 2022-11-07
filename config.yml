@@ -91,6 +91,7 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - bash-completion
+  - cvs
   - doxygen
   - gettext
   - gifsicle
