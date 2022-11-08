@@ -727,4 +727,43 @@ Load the backup config and create a new version
   * Open the downloaded pkg file:
     * MonoFramework-MDK-6.12.0.182.macos10.xamarin.universal.pkg
 
-TODO: Start properly
+
+---
+
+## Restore Remote Desktop Configurations
+
+This step restores previous connection details from a
+backup or another workstation.
+
+_Note: Microsoft Remote Desktop is installed by Ansible._
+
+  * Assuming that the old home directory was restored to:
+    `/System/Volumes/Data/recovered/processing/Users/asterr`
+
+  * Assuming that the current configurations can be overwritten.
+
+  * Copy the sqlite files:
+
+```
+cd /System/Volumes/Data/recovered/processing/Users/asterr
+rsync -avP Library/Containers/com.microsoft.rdc.macos/Data/Library/Application\ Support/com.microsoft.rdc.macos/com.microsoft.rdc.application-data.sqlite* ~/Library/Containers/com.microsoft.rdc.macos/Data/Library/Application\ Support/com.microsoft.rdc.macos
+
+cd ~/Library/Containers/com.microsoft.rdc.macos/
+cd Data/Library/Application\ Support/com.microsoft.rdc.macos
+ls -l
+```
+
+```
+total 752
+drwxr-xr-x@ 5 asterr  staff     160 Nov  7 12:14 SupportingImages
+drwxr-xr-x@ 5 asterr  staff     160 Nov  7 12:06 com.microsoft.appcenter
+-rw-r--r--@ 1 asterr  staff  159744 Jul  7 10:03 com.microsoft.rdc.application-data.sqlite
+-rw-r--r--@ 1 asterr  staff   32768 Nov  7 12:05 com.microsoft.rdc.application-data.sqlite-shm
+-rw-r--r--@ 1 asterr  staff  181312 Nov  7 12:15 com.microsoft.rdc.application-data.sqlite-wal
+```
+
+  * Start Remote Desktop
+
+  * Verify each of the saved connections
+    * May need to add trust for the TLS certificates (stored in keychain)
+    * May need to supply the passwords again (stored in keychain)
