@@ -139,33 +139,6 @@ _Clipboard with history_
     * Click Login Items
     * Add Flycut.app
 
-## Fix Media Key Mappings -- Fixed by using correct app
-
-  * Download Karabiner-Elements v14.10.0
-    * https://karabiner-elements.pqrs.org/
-  * Install Karabiner Elements
-
-_This might not be useful...._
-
-_NOTE: I uninstalled Karabiner_
-
-  * Disable Apple Music
-    ```
-    launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
-    ```
-
-_NOTE: I did not disable Apple Music._
-
-
-  * Install YT Music from Brew
-    ```
-    brew install --cask yt-music
-    ```
-
-  * NOTE: YouTube Music Desktop is *wrong*
-  * NOTE: I should have setup YT Music in the first place (was using on old mac.)
-  * See: https://github.com/steve228uk/YouTube-Music
-
 ----
 
 ## Install Parallels

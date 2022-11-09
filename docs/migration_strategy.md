@@ -35,7 +35,7 @@ as needed._
   * [ ] Outlook (Account)
   * [ ] Teams (Account)
   * [ ] iTerm2 (License)
-  * [ ] Youtube Music (Account)
+  * [ ] YT Music (Account)
   * [ ] Slack (Accounts)
   * [ ] Docker Desktop (Account, Configs)
   * [ ] Sublime Text (License, Configs, Plugins)
@@ -238,9 +238,9 @@ _Note: Gcloud is installed by ansible into `~/utils/google-cloud-sdk`._
 
 ---
 
-## Youtube Music
+## YT Music
 
-_Note: Youtube Music is install by ansible._
+_Note: YT Music is install by ansible._
 
 _Need to review if any actions are actually required._
 
