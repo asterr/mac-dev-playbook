@@ -740,3 +740,35 @@ drwxr-xr-x@ 5 asterr  staff     160 Nov  7 12:06 com.microsoft.appcenter
   * Verify each of the saved connections
     * May need to add trust for the TLS certificates (stored in keychain)
     * May need to supply the passwords again (stored in keychain)
+
+---
+
+## Recover Keychains from Backup
+
+This step is required to recover keys in the `login` keychain.
+
+Mac OS insists on putting certain passwords and keys that
+it assumes are _application keys_ into the login keychain,
+which is not synced.
+
+_Note: The iCloud keychain should be synced from iCloud._
+
+  * Copy the login.keychain-db from backup:
+
+```
+cd /System/Volumes/Data/recovered/processing/Users/asterr
+cd Library/Keychains
+rsync -avP login.keychain-db ~/Library/Keychains/recovered-login.keychain-db
+```
+
+  * Open the Keychain Access App
+
+  * File -> Add Keychain
+
+  * Select "recovered-login.keychain-db"
+    * Should appear under "Custom Keychains -> recovered-login"
+
+  * Open the recovered keychain
+    * will need to supply the previous password
+
+  * Optionally, copy desired items from "recovered-login" to "login"
