@@ -1,0 +1,20 @@
+---
+- name: Setup duplicati001
+  ansible.builtin.include_role:
+    name: asterr.macbook.duplicati
+  vars:
+    nas_name: duplicati001
+    username: "{{ nas['duplicati001']['username'] }}"
+    password: "{{ nas['duplicati001']['password'] }}"
+    nas_ip_address: "{{ nas['duplicati001']['nas_ip_address'] }}"
+    nas_shares: "{{ nas['duplicati001']['nas_shares'] }}"
+
+- name: Setup duplicati002
+  ansible.builtin.include_role:
+    name: asterr.macbook.duplicati
+  vars:
+    nas_name: duplicati002
+    username: "{{ nas['duplicati002']['username'] }}"
+    password: "{{ nas['duplicati002']['password'] }}"
+    nas_ip_address: "{{ nas['duplicati002']['nas_ip_address'] }}"
+    nas_shares: "{{ nas['duplicati002']['nas_shares'] }}"

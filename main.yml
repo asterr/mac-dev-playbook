@@ -54,8 +54,6 @@
       tags: ['pyenv', 'work']
     - role: asterr.macbook.iodata
       tags: ['iodata', 'home']
-    - role: asterr.macbook.youtubemusic
-      tags: ['youtubemusic', 'home', 'work']
 
   tasks:
     - import_tasks: tasks/sudoers.yml
@@ -76,6 +74,9 @@
     - import_tasks: tasks/sublime-text.yml
       when: configure_sublime
       tags: ['sublime-text']
+
+    - import_tasks: tasks/duplicati.yml
+      tags: ['duplicati', 'home']
 
     - block:
         - name: Run configured post-provision ansible task files.

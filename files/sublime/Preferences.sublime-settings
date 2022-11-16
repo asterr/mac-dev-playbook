@@ -302,11 +302,11 @@
     "*.zip"
   ],
   "close_windows_when_empty": true,
-  "color_scheme": "Packages/User/Cobalt (SL).tmTheme",
+  "color_scheme": "auto",
   "create_window_at_startup": false,
   "detect_indentation": true,
   "draw_minimap_border": false,
-  "draw_white_space": "selection",
+  "draw_white_space": "all",
   "ensure_newline_at_eof_on_save": false,
   "fade_fold_buttons": true,
   "file_exclude_patterns":

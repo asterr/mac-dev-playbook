@@ -2,19 +2,23 @@
 
 ## Data Backup Tools
 
-  [ ] Time Machine
-  [ ] Backblaze
-  [ ] Duplicati
+  * [ ] Time Machine
+  * [ ] Backblaze
+  * [ ] Duplicati
 
 ---
 
 ## Key Data to Verify
 
-  [ ] /Users/*
-  [ ] Virtual Machines
-  [ ] Desktop (Aaron)
-  [ ] Stickies (Aaron)
-  [ ] Keychain
+_Verify the following data is backed up and
+restored to /System/Volumes/Data/recovered._
+
+
+  * [ ] /Users/*
+  * [ ] Virtual Machines
+  * [ ] Desktop (Aaron)
+  * [ ] Stickies (Aaron)
+  * [ ] Keychain
 
 ---
 
@@ -25,18 +29,18 @@ applications.  The data can be downloaded from servers
 as needed._
 
 
-  [ ] Pulse / VPN
-  [ ] Chrome (Accounts)
-  [ ] VIP Access (Register Token)
-  [ ] Outlook (Account)
-  [ ] Teams (Account)
-  [ ] iTerm2 (License)
-  [ ] Youtube Music (Account)
-  [ ] Slack (Accounts)
-  [ ] Docker Desktop (Account, Configs)
-  [ ] Sublime Text (License, Configs, Plugins)
-  [ ] Microsoft Remote Desktop (Configs)
-  [ ] OneNote (Account)
+  * [ ] Pulse / VPN
+  * [ ] Chrome (Accounts)
+  * [ ] VIP Access (Register Token)
+  * [ ] Outlook (Account)
+  * [ ] Teams (Account)
+  * [ ] iTerm2 (License)
+  * [ ] YT Music (Account)
+  * [ ] Slack (Accounts)
+  * [ ] Docker Desktop (Account, Configs)
+  * [ ] Sublime Text (License, Configs, Plugins)
+  * [ ] Microsoft Remote Desktop (Configs)
+  * [ ] OneNote (Account)
 
 ---
 
@@ -45,21 +49,22 @@ as needed._
 _Note: These applications require data migration to
 be useful, especially mail and virtual machine related._
 
-  [ ] Omnifocus (Account, Config)
-  [ ] Mail (Accounts, Config)
-  [ ] Calendar (Account)
-  [ ] MsgFiler (License)
-  [ ] SendToKindle (Account)
-  [ ] Microsoft Excel
-  [ ] VMWare Fusion (License, Config)
-  [ ] SpamSieve (License)
-  [ ] MiniCalendar
+  * [ ] Omnifocus (Account, Config)
+  * [ ] Mail (Accounts, Config)
+  * [ ] Calendar (Account)
+  * [ ] MsgFiler (License)
+  * [ ] SendToKindle (Account)
+  * [ ] Microsoft Excel
+  <!-- * [ ] VMWare Fusion (License, Config)  -- replaced by Parallels -->
+  * [ ] Parallels (License, Config)
+  * [ ] SpamSieve (License)
+  * [ ] MiniCalendar
 
 ---
 
 ## Additional Bits
 
-  [ ] Printer (Manual)
+  * [ ] Printer (Manual)
 
 
 ---
@@ -69,6 +74,8 @@ be useful, especially mail and virtual machine related._
 ## Base Install
 
 See the base_install.md
+
+_Note: Ran Software Updates from System Preferences._
 
 ---
 Manual steps below here.
@@ -102,6 +109,13 @@ _Note: Pulse is installed by ansible._
       * settings prompted at login:
         * Realm: Two-Factor
         * User Name: {{ short username }}
+
+_Note: Since Pulse will be outdated, it will auto-upgrade
+about 5 minutes after connecting.  In Oct 2022, it upgraded
+to v9.1.15(15819)_
+
+_Reboot after this sequence.)_
+
 
 ---
 
@@ -179,6 +193,7 @@ _Note: MS Office is installed by ansible._
   * Open Microsoft AutoUpdate
   * Open "Advanced"
   * Set Update Channel to Beta
+  * Turn off "Auto Install"
 
 ---
 
@@ -223,9 +238,9 @@ _Note: Gcloud is installed by ansible into `~/utils/google-cloud-sdk`._
 
 ---
 
-## Youtube Music
+## YT Music
 
-_Note: Youtube Music is install by ansible._
+_Note: YT Music is install by ansible._
 
 _Need to review if any actions are actually required._
 

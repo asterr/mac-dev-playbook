@@ -34,16 +34,33 @@ dockitems_remove:
   - FaceTime
   - TV
   - Music
+  - Safari
 dockitems_persist:
+  - name: "Mail"
+    path: "/Applications/Mail.app"
+    pos: 2
   - name: "Google Chrome"
     path: "/Applications/Google Chrome.app/"
     pos: 3
+  - name: "Microsoft Outlook"
+    path: "/Applications/Microsoft Outlook.app"
+    pos: 4
+  - name: "Contacts"
+    path: "/Applications/Contacts.app"
+    pos: 5
+  - name: "Reminders"
+    path: "/Applications/Reminders.app"
+    pos: 6
+  - name: "Calendar"
+    path: "/Applications/Calendar.app"
+    pos: 7
+  - name: "Notes"
+    path: "/Applications/Notes.app"
+    pos: 8
   - name: "Activity Monitor"
     path: "/System/Applications/Utilities/Activity Monitor.app/"
   - name: "VIP Access"
     path: "/Applications/VIP Access.app/"
-  - name: "Microsoft Outlook"
-    path: "/Applications/Microsoft Outlook.app"
   - name: "iTerm"
     path: "/Applications/iTerm.app"
 
@@ -61,7 +78,11 @@ sublime_package_control:
   - "Dockerfile Syntax Highlighting"
   - "FileDiffs"
   - "GitHub Flavored Markdown Preview"
+  - "INI"
   - "Jinja2"
+  - "Markdown Extended"
+  - "MarkdownLivePreview"
+  - "MarkdownPreview"
   - "Package Control"
   - "PHP-Twig"
   - "Pretty JSON"
@@ -71,4 +92,54 @@ sublime_package_control:
   - "WordCount"
 
 homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - autoconf
+  - bash-completion
+  - cvs
+  - doxygen
+  - gettext
+  - gifsicle
+  - git
+  - git-secret
+  - github/gh/gh
   - gnu-tar
+  - gnupg
+  - go
+  - gpg
+  - httpie
+  - iperf
+  - jq
+  - libevent
+  - sqlite
+  - mcrypt
+  - mkdocs
+  - nmap
+  - node
+  - npm
+  - nvm
+  - php
+  - ssh-copy-id
+  - cowsay
+  - readline
+  - openssl
+  - pv
+  - tree
+  - wget
+  - wrk
+  - zsh-history-substring-search
+
+homebrew_cask_apps:
+  - bluesnooze
+  - chromedriver
+  - docker
+  - dropbox
+  - firefox
+  - google-chrome
+  - handbrake
+  - licecap
+  - sequel-ace
+  - slack
+  - sublime-text
+  - transmit
+  - vagrant
+  - yt-music

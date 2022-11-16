@@ -1,0 +1,13 @@
+site_name: MacBook Reinstall
+copyright: Copyright(c) 2022. Aaron Sterr.
+theme: readthedocs
+
+nav:
+  - index.md
+  - migration strategy: migration_strategy.md
+  - migration sequencing: migration_sequence.md
+  - base install: base_install.md
+  - additional configuration: additional_configuration.md
+  - zeus install: zeus_ubuntu_install.md
+  - gcloud configs: gcloud_configs.md
+  - mac notes: mac_os_notes.md
