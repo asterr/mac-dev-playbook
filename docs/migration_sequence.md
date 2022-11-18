@@ -35,20 +35,16 @@
 
 ## Disk Layout
 
-_This is not set in stone, and I am leaning towards
-using /Users for primary storage, as the least surprising
-design._
+_I decided to return to standard usage of /Users._
 
   * `/Users`
-    * home directories only
-    * goal is <20GB
+    * home directories
+
   * `/System/Volumes/Data`
-    * `opt/`
-      * created by ansible playbook
-      * holds homebrew and vagrant
-    * `naibu/` -- not implemented
-      * `parallels/`
-      * `sandbox/`
-      * TBD
-    * `recovered/`
-      * holds data recovered from timemachine
+      * `opt/`
+          * created by ansible playbook
+          * holds homebrew and vagrant
+      * `recovered/`
+          * holds data recovered from timemachine
+      * `usr/`
+          * holds locally installed software
