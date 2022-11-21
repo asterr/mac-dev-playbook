@@ -1,6 +1,8 @@
 site_name: MacBook Reinstall
 copyright: Copyright(c) 2022. Aaron Sterr.
 theme: readthedocs
+plugins:
+  - with-pdf
 
 nav:
   - index.md
