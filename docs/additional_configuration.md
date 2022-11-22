@@ -772,3 +772,19 @@ rsync -avP login.keychain-db ~/Library/Keychains/recovered-login.keychain-db
     * will need to supply the previous password
 
   * Optionally, copy desired items from "recovered-login" to "login"
+
+---
+
+## Docker Config
+
+_Note: most of Docker is installed with Ansible._
+
+_Note: this step is required to support systemd on Centos 6, etc._
+
+  * cd to the docker config directory:
+    * `cd /Users/asterr/Library/Group Containers/group.com.docker`
+
+  * enable `deprecatedCgroupv1` in `settings.json`
+    * `"deprecatedCgroupv1": true,`
+
+  * restart Docker Desktop
