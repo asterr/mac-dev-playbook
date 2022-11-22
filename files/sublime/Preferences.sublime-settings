@@ -392,6 +392,7 @@
   "margin": 4,
   "match_brackets": true,
   "match_selection": true,
+  "preview_on_click": false,
   "rulers":
   [
     80
