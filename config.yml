@@ -88,6 +88,7 @@ sublime_package_control:
   - "Pretty JSON"
   - "SublimeLinter"
   - "SublimeLinter-contrib-yamllint"
+  - "Terraform"
   - "TrailingSpaces"
   - "WordCount"
 
