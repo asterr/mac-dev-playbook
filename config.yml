@@ -119,6 +119,7 @@ homebrew_installed_packages:
   - npm
   - nvm
   - php
+  - qpdf
   - ssh-copy-id
   - cowsay
   - readline
