@@ -97,6 +97,7 @@ homebrew_installed_packages:
   - autoconf
   - bash-completion
   - cvs
+  - dive
   - doxygen
   - gettext
   - gifsicle
