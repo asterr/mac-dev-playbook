@@ -112,6 +112,7 @@ homebrew_installed_packages:
   - iperf
   - jq
   - libevent
+  - meson
   - sqlite
   - mcrypt
   - mkdocs
