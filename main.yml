@@ -78,6 +78,10 @@
     - import_tasks: tasks/duplicati.yml
       tags: ['duplicati', 'home']
 
+    - import_tasks: tasks/install-aliases.yml
+      when: configure_dotfiles
+      tags: ['dotfiles','pyenv']
+
     - block:
         - name: Run configured post-provision ansible task files.
           include_tasks: "{{ outer_item }}"

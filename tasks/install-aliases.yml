@@ -1,0 +1,7 @@
+---
+# Custom Terminal theme.
+- name: Install Aliases
+  copy:
+    src: files/aliases
+    dest: '~/.aliases'
+    backup: yes

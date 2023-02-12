@@ -1,0 +1,2 @@
+# See: https://madness.dannyb.co/
+alias madness='docker run --rm -it -v $PWD:/docs -p 3000:3000 dannyben/madness'
